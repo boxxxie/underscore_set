@@ -3,7 +3,8 @@
  * This is a functional implementation of a SET
  * adding and removing from sets do not overwrite previous values of the set
  */
-var _ = require('./underscore');
+var _ = require('./libraries/underscore/underscore');
+require('./libraries/underscore_extended/underscore_extended');
 function Set(initial_items){
     if(initial_items && !_.isObject(initial_items)){
 	throw "the set must be given a list of initial items, or empty arguments"
@@ -43,6 +44,9 @@ function Set(initial_items){
 	       },
 	       list:function(){
 		   return _.values(items);
+	       },
+	       union:function(set){
+		   return _.fill(items,set);
 	       }
 	   }
        })

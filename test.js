@@ -1,5 +1,5 @@
 //FIXME: really make some better annotated tests, this is just silly
-var _ = require('./underscore');
+var _ = require('./libraries/underscore/underscore');
 var Set = require('./underscore.set');
 
 var item1 = 1;

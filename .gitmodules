@@ -1,0 +1,6 @@
+[submodule "libraries/underscore"]
+	path = libraries/underscore
+	url = git://github.com/documentcloud/underscore.git
+[submodule "libraries/underscore_extended"]
+	path = libraries/underscore_extended
+	url = git://github.com/boxxxie/underscore_extended.git
